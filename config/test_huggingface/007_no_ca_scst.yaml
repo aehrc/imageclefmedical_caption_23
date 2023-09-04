@@ -1,0 +1,29 @@
+exp_dir: /datasets/work/hb-mlaifsp-mm/work/experiments
+dataset_dir: /datasets/work/hb-mlaifsp-mm/work/datasets
+ckpt_zoo_dir: /datasets/work/hb-mlaifsp-mm/work/checkpoints
+
+devices: 1
+num_workers: 7
+memory: '64GB'
+
+module: modules.lightning_modules.no_ca_scst
+definition: SCSTNoCrossAttentionBERTScore
+
+test_ckpt_name: aehrc/medicap
+
+mbatch_size: 4
+precision: 16
+
+# Doesn't impact testing:
+lr: 5e-6
+val_check_interval: 0.1
+max_epochs: 3
+accumulated_mbatch_size: 32
+every_n_epochs: 1
+monitor: 'val_bertscore_f1'
+monitor_mode: 'max'
+deterministic: False
+decoder_max_len: 256
+num_test_beams: 4
+enable_progress_bar: True
+weights_summary: 'full'

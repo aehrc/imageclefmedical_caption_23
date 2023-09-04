@@ -1,0 +1,27 @@
+exp_dir: /datasets/work/hb-mlaifsp-mm/work/experiments
+dataset_dir: /datasets/work/hb-mlaifsp-mm/work/datasets
+ckpt_zoo_dir: /datasets/work/hb-mlaifsp-mm/work/checkpoints
+
+devices: 1
+num_workers: 7
+memory: '64GB'
+
+module: modules.lightning_modules.no_ca
+definition: NoCrossAttention
+
+lr: 5e-5
+max_epochs: 512
+mbatch_size: 4
+accumulated_mbatch_size: 32
+every_n_epochs: 1
+monitor: 'val_bertscore_f1'
+monitor_mode: 'max'
+precision: 16
+deterministic: False
+decoder_max_len: 256
+num_test_beams: 4
+enable_progress_bar: True
+weights_summary: 'full'
+
+early_stopping: True
+patience: 8
