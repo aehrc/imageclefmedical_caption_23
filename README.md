@@ -1,6 +1,9 @@
 # MedICap: A Concise Model for Medical Image Captioning
 
-MedICap is a medical image captioning model that placed first in the ImageCLEFmedical Caption 2023 challenge: https://www.imageclef.org/2023/medical/caption (team CSIRO). It is available on the Hugging Face Hub: https://huggingface.co/aehrc/medicap. It is presented in the following notes and at CLEF 2023: 
+MedICap is a medical image captioning model that placed first in the ImageCLEFmedical Caption 2023 challenge: https://www.imageclef.org/2023/medical/caption (team CSIRO). It is available on the Hugging Face Hub: https://huggingface.co/aehrc/medicap. It is presented in the working notes and at CLEF 2023.
+
+#### Working notes:
+
 https://www.dei.unipd.it/~faggioli/temp/CLEF2023-proceedings/paper-132.pdf
 
 #### BibTeX:
