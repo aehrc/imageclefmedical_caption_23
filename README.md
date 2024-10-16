@@ -4,7 +4,9 @@ MedICap is a medical image captioning model that placed first in the ImageCLEFme
 
 #### Working notes:
 
-https://www.dei.unipd.it/~faggioli/temp/CLEF2023-proceedings/paper-132.pdf
+[https://www.dei.unipd.it/~faggioli/temp/CLEF2023-proceedings/paper-132.pdf
+](https://ceur-ws.org/Vol-3497/paper-132.pdf)
+
 
 #### BibTeX:
 ```bibtex
